@@ -3,6 +3,7 @@
     --primary-color: #F9E926;
     --primary-black: #0B0B0B;
     --secundary-black: #131313;
+    --white: #ffffff;
 }
 
 *{
@@ -13,12 +14,12 @@
 .primary{
     height: 100vh;
     background: var(--primary-black);
-    color: #ffffff;
+    color: var(--white);
 }
 .secundary{
     height: 100vh;
     background: var(--secundary-black);
-    color: #ffffff;
+    color: var(--white);
 
 }
 img{
