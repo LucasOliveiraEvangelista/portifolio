@@ -74,7 +74,7 @@ nav .bar .nav_content ul li:hover{
 }
 .inicio img{
     padding: 10px 0 0 50px;
-    height: 28rem;
+    height: 24rem;
     margin: 10px;
 }
 .primary .inicio h1{
@@ -127,5 +127,23 @@ nav .bar .nav_content ul li:hover{
     height: 100vh;
     background: var(--secundary-black);
     color: var(--white);
-
+}
+.eu{
+    display: flex;
+    flex-direction: row;
+    padding-top: 160px;
+}
+.eu h1{
+    font-size: 2.2rem;
+    font-family: var(--title);
+    margin-bottom: 20px;
+}
+.eu p{
+    font-family: var(--text);
+    font-size: 1.4rem;
+    width: 70%;
+}
+.eu img{
+    width: 28rem;
+    margin: 0 120px 0 60px;
 }
