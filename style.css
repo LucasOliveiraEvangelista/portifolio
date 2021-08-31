@@ -73,15 +73,15 @@ nav .bar .nav_content ul li:hover{
     flex-direction: row;
 }
 .inicio img{
-    padding: 10px 0 0 50px;
+    padding: 40px 0 0 50px;
     height: 24rem;
-    margin: 10px;
+    margin-top: 80px;
 }
 .primary .inicio h1{
     font-family: var(--title);
     font-size: 2.6rem;
     padding-top: 100px;
-    padding: 120px 0 0 40px;
+    padding: 200px 0 0 40px;
     font-weight: 300;
 }
 .primary .inicio h2{
@@ -131,19 +131,121 @@ nav .bar .nav_content ul li:hover{
 .eu{
     display: flex;
     flex-direction: row;
-    padding-top: 160px;
+    padding-top: 100px;
 }
 .eu h1{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-family: var(--title);
     margin-bottom: 20px;
 }
 .eu p{
     font-family: var(--text);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     width: 70%;
 }
 .eu img{
-    width: 28rem;
-    margin: 0 120px 0 60px;
+    width: 30rem;
+    margin: 0 80px 0 40px;
+}
+
+.timeline{
+    display: flex;
+    padding-top: 100px;
+}
+.title h1{
+    text-align: center;
+    font-family: var(--title);
+    font-size: 2.4rem;
+    padding: 40px 0 20px 0;
+}
+.timeline .circle{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    margin-left: 20px;
+}
+.timeline .circle i{
+    color: var(--primary-color);
+    margin: 20px 0 0 18px;
+}
+.timeline .box{
+    display: block;
+    margin-left: 20px;
+    width: 500px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: var(--secundary-black);
+    box-shadow: 10px 8px 8px #00000078;
+    transition: 0.5s ease-in all;
+}
+.timeline .box h1{
+    font-family: var(--title);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 12px;
+}
+.timeline .box h2{
+    font-family: var(--title);
+    color: var(--white);
+    font-size: 1rem;
+    margin-left: 12px;
+}
+.timeline .box p{
+    font-family: var(--text);
+    color: var(--white);
+    font-size: 1rem;
+    padding: 12px;
+}
+.timeline .box:hover{
+    border: 0.5px solid #c4b513;
+    padding: 10px;
+}
+
+/* terceira seção */
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.grid .project{
+    width: 360px;
+    height: 180px;
+    margin: 16px;
+    background-color: var(--primary-black);
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.5s ease;
+}
+.grid .project .name{
+    padding: 20px;
+    font-family: var(--title);
+    font-size: 2rem;
+    color: var(--white);
+}
+.grid .project p{
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 1.4rem;
+    padding: 5px;
+}
+.grid .project:hover{
+    border-bottom: 2px solid var(--primary-color);
+    padding: 6px;
+    width: 380px;
+    height: 200px;
+}
+.link a{
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--title);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.link a:hover{
+    color: #fff47e;
 }
