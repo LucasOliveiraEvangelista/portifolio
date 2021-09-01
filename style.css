@@ -249,3 +249,33 @@ nav .bar .nav_content ul li:hover{
 .link a:hover{
     color: #fff47e;
 }
+
+/* quarta seção */
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    width: 60%;
+}
+.itens .item{
+    width: 130px;
+    height: 130px;
+    margin: 20px;
+    background-color: var(--secundary-black);
+    text-align: center;
+    border-radius: 6px;
+    border-left: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+.itens .item i{
+    margin-top: 40px;
+    font-size: 3.8rem;
+    transition: 0.2s ease;
+}
+.itens .item i:hover{
+    color: var(--primary-color);
+    padding: 4px;
+}
+
