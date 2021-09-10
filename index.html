@@ -15,28 +15,28 @@
             <div class="nav_content">
                 <div class="logo">Portifólio</div>
                 <ul>
-                    <li>Inicío</li>
-                    <li>Quem sou eu ?</li>
-                    <li>Formação</li>
-                    <li>Projetos</li>
-                    <li>Linguagens</li>
-                    <li>Serviços</li>
+                    <a href="#inicio"><li>Inicío</li></a>
+                    <a href="#sobre"><li>Sobre Mim</li></a>
+                    <a href="#formacao"><li>Formação</li></a>
+                    <a href="#projetos"><li>Projetos</li></a>
+                    <a href="#linguagens"><li>Linguagens</li></a>
+                    <a href="#servicos"><li>Serviços</li></a>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="primary">
+    <div class="primary" id="inicio">
         <div class="inicio">
             <div class="txt">
                 <h1>Olá Mundo, eu sou o</h1>
-                <h2>Lucas Evangeista</h2>
+                <h2>Lucas Evangelista</h2>
                 <h3>Desenvolvedor Front-end e Php júnior</h3>
                 <a href="https://linkedin.com/in/lucas-evangelista-dev"><button><i class="fab fa-linkedin"></i>Linkedin</button></a>
             </div>
             <img class="image" src="dev.svg" alt="">
         </div>
     </div>
-    <div class="eu secundary">
+    <div class="eu secundary" id="sobre">
         <img class="image" src="devv.svg" alt="">
         <div class="desc">
             <h1>Sobre mim</h1>
@@ -48,7 +48,7 @@
             </div>
         
     </div>
-    <div class="formacao primary">
+    <div class="formacao primary" id="formacao">
         <div class="title"><h1>Formação</h1></div>
         <div class="timeline">
             <div class="circle">
@@ -57,7 +57,7 @@
             <div class="box">
                 <h1>Ensino Médio</h1>
                 <h2>2020</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias.</p>
+                <p>Ensino médio na escola Prof° Célia Ribeiro Landim, Período integral</p>
             </div>
             <div class="circle">
                 <i class="fas fa-graduation-cap"></i>
@@ -65,13 +65,13 @@
             <div class="box">
                 <h1>Tecnico em Desenvolvimento de Sistemas</h1>
                 <h2>2021</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae aliquam impedit, assumenda, eligendi doloremque vero.</p>
+                <p>É a área profissional responsável por dar uma solução informatizada a um problema, como a criação de um software, um aplicativo ou um banco de dados.</p>
             </div>
             
         </div>
-    
+        <div class="btn"><button class="cv"><a href="curriculo.pdf"><i class="fas fa-download"></i> Download CV</button></a></div>
     </div>
-    <div class="projetos secundary">
+    <div class="projetos secundary" id="projetos">
         <div class="title"><h1>Projetos</h1></div>
         <div class="grid">
             <div class="project">
@@ -105,54 +105,20 @@
             <a href="https://github.com/LucasOliveiraEvangelista/" target="_blank"><p>Repositórios github</p></a>
         </div>
     </div>
-    <div class="conhecimentos primary">
-        <!-- <div class="itens">
-            <div class="item">
-                <i class="fab fa-html5"></i>
-            </div>
-            <div class="item">
-                <i class="fab fa-js"></i>
-            </div>
-            <div class="item">
-                <i class="fab fa-css3-alt"></i>
-            </div>
-        </div>
-        <div class="itens">
-            <div class="item">
-                <i class="fab fa-php"></i>
-            </div>
-            <div class="item">
-                <i class="fab fa-figma"></i>
-            </div>
-            <div class="item">
-                <i class="fab fa-sass"></i>
-            </div>
-        </div>
-        <div class="itens">
-            <div class="item">
-                <i class="fab fa-php"></i>
-            </div>
-            <div class="item">
-                <i class="fab fa-figma"></i>
-            </div>
-            <div class="item">
-                <i class="fab fa-sass"></i>
-            </div>
-        </div> -->
-
+    <div class="conhecimentos primary" id="linguagens">
         <div class="cadeia">
             <div class="title"><h1>Linguagens e softwares</h1></div>
             <div class="caixa">
                 <div class="card">
                     <div class="conteudo">
-                        <h2>Html</h2>
+                        <h2>HTML 5</h2>
                         <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</p>
                     </div>
                     <i class="fab fa-html5"></i>
                 </div>
                 <div class="card">
                     <div class="conteudo">
-                        <h2>CSS</h2>
+                        <h2>CSS 3</h2>
                         <p>O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a aparência em páginas da internet.</p>
                     </div>
                     <i class="fab fa-css3"></i>
@@ -180,20 +146,41 @@
                     </div>
                     <i class="fab fa-figma"></i>
                 </div>
-                <!-- <div class="card">
-                    <div class="conteudo">
-                        <h2>CSS</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, commodi tempora odit labore nostrum quasi officiis nulla omnis, impedit rem reprehenderit inventore dolores magni??</p>
-                    </div>
-                    <i class="fab fa-php"></i>
-                </div> -->
             </div>
         </div>
-       
-        
-        
     </div>
-    <div class="servicos secundary"></div>
-    <footer class="primary"></footer>
+    <div class="servicos secundary" id="servicos">
+        <div class="title"><h1>Serviços</h1></div>
+        <div class="line">
+            
+            <div class="card">
+                <i class="fas fa-laptop"></i>
+                <h1>Criação de sites</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ex, ipsa, quos tenetur enim incidunt praesentium vero molestias impedit asperiores cumque! Doloribus odio similique, nesciunt a labore inventore aliquid.</h2>
+            </div>
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h1>Código sêmantico</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ex, ipsa, quos tenetur enim incidunt praesentium vero molestias impedit asperiores cumque! Doloribus odio similique, nesciunt a labore inventore aliquid.</h2>
+            </div>
+            <div class="card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h1>Ui Design</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ex, ipsa, quos tenetur enim incidunt praesentium vero molestias impedit asperiores cumque! Doloribus odio similique, nesciunt a labore inventore aliquid.</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        <div class="links">
+            <a href="https://linkedin.com/in/lucas-evangelista-dev"><button class="btn"><i class="fab fa-linkedin"></i> linkedin</button></a>
+            <a href="https://github.com/LucasOliveiraEvangelista/"><button class="btn"><i class="fab fa-github"></i> github</button></a>
+            <a href="https://www.youtube.com/channel/UCS43U305JwL2T3ze6e3KcfA/"><button class="btn"><i class="fab fa-youtube"></i> youtube</button></a>
+            <a href="curriculo.pdf"><button class="btn"><i class="fas fa-download"></i> curriculo</button></a>
+            <a href="#inicio"><button class="btn"><i class="fas fa-arrow-up"></i></button></a>
+        </div>
+        <div class="txt">
+            <h1>Orgulhosamente feito por Lucas Evangelista.</h1>
+        </div>
+    </footer>
 </body>
 </html>

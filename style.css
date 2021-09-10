@@ -12,6 +12,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 /* classes */
@@ -29,11 +30,14 @@
     background-color: var(--primary-black);
     box-shadow: 10px 0 10px #00000098;
     position: fixed;
+    z-index: 2;
+    
 }
 nav .nav_content{
     display: flex;
     width: 90%;
     justify-content: space-between;
+    
 }
 nav .bar .nav_content .logo{
     display: flex;
@@ -52,12 +56,14 @@ nav .bar .nav_content ul li{
     font-size: 1.4rem;
     padding: 0 10px;
     cursor: pointer;
-    transition: 0.3s ease all;
+    transition: 0.5s ease all;
     font-family: var(--title)
 }
 nav .bar .nav_content ul li:hover{
     padding-bottom: 6px;
     color: #d5d3d3;
+    border-bottom: 3px solid var(--primary-color);
+    border-radius: 4px;
 }
 
 /* primeira seção */
@@ -105,8 +111,8 @@ nav .bar .nav_content ul li:hover{
 .primary .inicio button{
     width: 240px;
     height: 45px;
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--primary-black);
     border: none;
     border-radius: 6px;
     font-size: 24px;
@@ -114,7 +120,8 @@ nav .bar .nav_content ul li:hover{
 }
 .primary .inicio button:hover{
     cursor: pointer;
-    background-color: #c4b513;
+    background-color: #e6e6e6;
+    border-left: 2px solid var(--primary-color);
 }
 .primary .inicio button i{
     margin-right: 10px;
@@ -163,11 +170,11 @@ nav .bar .nav_content ul li:hover{
     width: 60px;
     background-color: transparent;
     border-radius: 50%;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--white);
     margin-left: 20px;
 }
 .timeline .circle i{
-    color: var(--primary-color);
+    color: var(--white);
     margin: 20px 0 0 18px;
 }
 .timeline .box{
@@ -201,6 +208,31 @@ nav .bar .nav_content ul li:hover{
 .timeline .box:hover{
     border: 0.5px solid #c4b513;
     padding: 10px;
+    cursor: pointer;
+}
+.formacao .btn{
+    display: flex;
+    align-items: center;
+}
+.formacao .btn .cv{
+    width: 240px;
+    height: 45px;
+    background-color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    margin: 30px 0 0 80px;
+    margin: 80px auto;
+}
+.formacao .btn .cv a{
+    color: var(--primary-black);
+}
+.formacao .btn .cv:hover{
+    cursor: pointer;
+    background-color: #e6e6e6;
+    border-left: 2px solid var(--primary-color);
+    
+
 }
 
 /* terceira seção */
@@ -223,6 +255,7 @@ nav .bar .nav_content ul li:hover{
     padding: 20px;
     font-family: var(--title);
     font-size: 2rem;
+    
     color: var(--white);
 }
 .grid .project p{
@@ -230,54 +263,30 @@ nav .bar .nav_content ul li:hover{
     font-family: var(--text);
     font-size: 1.4rem;
     padding: 5px;
+    font-weight: 600;
 }
 .grid .project:hover{
     border-bottom: 2px solid var(--primary-color);
     padding: 6px;
     width: 380px;
     height: 200px;
+    cursor: pointer;
 }
 .link a{
-    color: var(--primary-color);
+    color: var(--white);
     text-align: center;
     text-decoration: none;
     font-family: var(--title);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     transition: 0.5s ease;
+    margin-top: 10px;
 }
 .link a:hover{
-    color: #fff47e;
+    color: #b6b6b6;
 }
 
 /* quarta seção */
-/* 
-.itens{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
-    width: 60%;
-}
-.itens .item{
-    width: 130px;
-    height: 130px;
-    margin: 20px;
-    background-color: var(--secundary-black);
-    text-align: center;
-    border-radius: 6px;
-    border-left: 2px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-}
-.itens .item i{
-    margin-top: 40px;
-    font-size: 3.8rem;
-    transition: 0.2s ease;
-}
-.itens .item i:hover{
-    color: var(--primary-color);
-    padding: 4px;
-} */
 
 .conhecimentos{
     display: flex;
@@ -295,11 +304,13 @@ nav .bar .nav_content ul li:hover{
     position: relative;
     width: 300px;
     height: 200px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: var(--primary-color);
+    background: var(--secundary-black);
+    border-radius: 2px;
+    
 }
 .caixa .card i{
     position: absolute;
@@ -311,7 +322,8 @@ nav .bar .nav_content ul li:hover{
 }
 .caixa .card:hover i{
     left: 73%;
-    font-size: 110px;
+    font-size: 100px;
+    cursor: pointer;
 }
 .caixa .card .conteudo{
     position: relative;
@@ -328,13 +340,127 @@ nav .bar .nav_content ul li:hover{
     visibility: visible;
 }
 .caixa .card .conteudo h2{
-    color: var(--primary-black);
+    color: var(--white);
     text-transform: uppercase;
     font-size: 1.4rem;
-    line-height: 1.4em;
+    line-height: 1.6em;
+    font-family: var(--title)
 }
 .caixa .card .conteudo p{
-    color: var(--secundary-black);
+    color: #f2f2f2;
     font-size: .9rem;
+    font-family: var(--text)
 }
 
+/* quinta seção */
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.line .card{
+    width: 300px;
+    height: 420px;
+    margin: 40px;
+    text-align: center;
+    background-color: var(--primary-black);
+    transition: .7s ease;
+    border: 1px solid var(--primary-black);
+    border-radius: 2px;
+}
+.line .card:hover{
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+.line .card i{
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin: 40px 0 20px 0;
+}
+.line .card h1{
+    font-family: var(--title);
+    font-size: 2rem;
+    margin: 10px 0 15px 0;
+}
+.line .card h2{
+    font-family: var(--text);
+    font-size: 1.2rem;
+    margin: 2px 12px 0 12px;
+}
+
+
+
+footer{
+    height: 40vh;
+    background-color: var(--primary-black);
+}
+footer .links{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+footer .links a .btn{
+    width: 180px;
+    height: 50px;
+    padding: 8px;
+    margin: 10px;
+    font-size: 1.5rem;
+    background-color: var(--secundary-black);
+    text-transform: capitalize;
+    font-family: var(--text);
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    transition: 0.6s ease;
+}
+footer .links a:nth-child(1) .btn{
+    color: #0e76ae;
+}
+footer .links a:nth-child(2) .btn{
+    color: var(--white);
+}
+footer .links a:nth-child(3) .btn{
+    color: #d10d0d;
+}
+footer .links a:nth-child(4) .btn{
+    color: var(--primary-color);
+}
+footer .links a:nth-child(5) .btn{
+    margin-left: 10px;
+    background-color: var(--white);
+    width: 60px;
+    color: var(--primary-black);
+    cursor: pointer;
+}
+footer .links a:nth-child(1) .btn:hover{
+    color: var(--white);
+    background-color: #0e76ae;
+    cursor: pointer;
+}
+footer .links a:nth-child(2) .btn:hover{
+    color: var(--primary-black);
+    background-color: var(--white);
+    cursor: pointer;
+}
+footer .links a:nth-child(3) .btn:hover{
+    color: var(--white);
+    background-color: #d10d0d;
+    cursor: pointer;
+}
+footer .links a:nth-child(4) .btn:hover{
+    color: var(--secundary-black);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+footer .links a:nth-child(5) .btn:hover{
+    color: var(--white);
+    background-color: var(--secundary-black);
+    cursor: pointer;
+}
+footer .txt{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--title);
+    font-size: .8rem;
+}
