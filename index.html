@@ -6,181 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Lucas Evangelista - Dev</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="devv.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>   
-        <div class="bar">
-            <div class="nav_content">
-                <div class="logo">Portifólio</div>
-                <ul>
-                    <a href="#inicio"><li>Inicío</li></a>
-                    <a href="#sobre"><li>Sobre Mim</li></a>
-                    <a href="#formacao"><li>Formação</li></a>
-                    <a href="#projetos"><li>Projetos</li></a>
-                    <a href="#linguagens"><li>Linguagens</li></a>
-                    <a href="#servicos"><li>Serviços</li></a>
-                </ul>
-            </div>
-        </div>
+    <nav>
+        <h1>Portifólio</h1>
+        <ul>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
     </nav>
-    <div class="primary" id="inicio">
-        <div class="inicio">
+    <main>
+        <section class="home">
+            <div class="container">
+                <div class="text">
+                    <h1>Olá mundo, eu sou o</h1>
+                    <h2>Lucas Evangelista</h2>
+                    <h3>Desenvolvedor Front-end junior & UI Designer</h3>
+                    <div class="btns">
+                        <button>Download CV</button>
+                        <button>Entrar em contato</button>
+                    </div>
+                </div>
+                <img src="dev.svg" alt="dev-coding">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="text">
+                    <h1>Sobre mim</h1>
+                    <p>Meu nome é Lucas, tenho 18 anos, moro no Brasil, em São Paulo-SP. Recentemente conclui o curso Técnico de Desenvolvimento de sistemas. Também tenho estudado bastante sozinho para aprender novas tecnologias.
+                    Pretendo iniciar minha carreira como Desenvolvedor Front End. Desde então venho me dedicando dia após dia nos meus estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.</p>
+                </div>
+                <div class="links">
+                    <div class="box">
+                        <i class="fas fa-user"></i>
+                        <p class="info">Meu nome</p>
+                        <p>Lucas de Oliveira Evangelista</p>
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-github"></i>
+                        <p class="info">GitHub</p>
+                        <p>LucasOliveiraEvangelista</p>
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-linkedin"></i>
+                        <p class="info">LinkedIn</p>
+                        <p>Lucas de Oliveira Evangelista</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-envelope"></i>
+                        <p class="info">E-mail</p>
+                        <p>Lucas.evangelistadev@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="text">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <img src="embreve.png" alt="">
+                        <h1>Titulo</h1>
+                        <p>Tecnologias: Html, Css, js & Php</p>
+                    </div>
+                    <div class="box">
+                        <img src="embreve.png" alt="">
+                        <h1>Titulo</h1>
+                        <p>Tecnologias: Html, Css, js & Php</p>
+                    </div>
+                    <div class="box">
+                        <img src="embreve.png" alt="">
+                        <h1>Titulo</h1>
+                        <p>Tecnologias: Html, Css, js & Php</p>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box">
+                        <img src="embreve.png" alt="">
+                        <h1>Titulo</h1>
+                        <p>Tecnologias: Html, Css, js & Php</p>
+                    </div>
+                    <div class="box">
+                        <img src="embreve.png" alt="">
+                        <h1>Titulo</h1>
+                        <p>Tecnologias: Html, Css, js & Php</p>
+                    </div>
+                    <div class="box">
+                        <img src="embreve.png" alt="">
+                        <h1>Titulo</h1>
+                        <p>Tecnologias: Html, Css, js & Php</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="text">
+                    <h1>Serviços</h1>
+                </div>
+                <div class="box">
+                    <div class="items">
+                        <i class="fas fa-code"></i>
+                        <h1>Criação de sites</h1>
+                    </div>
+                    <div class="items">
+                        <i class="fab fa-figma"></i>
+                        <h1>UI Design</h1>
+                    </div>
+                    <div class="items">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h1>Sites responsivos</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="text">
+                    <h1>Minhas Skills</h1>
+                </div>
+                <div class="box">
+                    <div class="items">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="items">
+                        <i class="fab fa-css3"></i>
+                    </div>
+                    <div class="items">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="items">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="items">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="rodape">
+            <div class="links">
+                <a href="https://linkedin.com/in/lucas-evangelista-dev"><button class="btn"><i class="fab fa-linkedin"></i> linkedin</button></a>
+                <a href="https://github.com/LucasOliveiraEvangelista/"><button class="btn"><i class="fab fa-github"></i> github</button></a>
+                <a href="https://www.youtube.com/channel/UCS43U305JwL2T3ze6e3KcfA/"><button class="btn"><i class="fab fa-youtube"></i> youtube</button></a>
+                <a href="curriculo.pdf"><button class="btn"><i class="fas fa-download"></i> curriculo</button></a>
+                <a href="#inicio"><button class="btn"><i class="fas fa-arrow-up"></i></button></a>
+            </div>
             <div class="txt">
-                <h1>Olá Mundo, eu sou o</h1>
-                <h2>Lucas Evangelista</h2>
-                <h3>Desenvolvedor Front-end e Php júnior</h3>
-                <a href="https://linkedin.com/in/lucas-evangelista-dev"><button><i class="fab fa-linkedin"></i>Linkedin</button></a>
+                <h1>Orgulhosamente feito por Lucas Evangelista.</h1>
             </div>
-            <img class="image" src="dev.svg" alt="">
-        </div>
-    </div>
-    <div class="eu secundary" id="sobre">
-        <img class="image" src="devv.svg" alt="">
-        <div class="desc">
-            <h1>Sobre mim</h1>
-                <p>  Meu nome é Lucas, tenho 18 anos, moro no Brasil, especificamente em São Paulo-SP. 
-                    Recentemente conclui o curso de Desenvolvimento de sistemas. Também tenho estudado bastante sozinho para aprender
-                    novas tecnologias.</p><br>
-                <p>  Pretendo iniciar minha carreira como Desenvolvedor Front End. Desde então venho dedicando dia a dia aos
-                    estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.</p>
-            </div>
-        
-    </div>
-    <div class="formacao primary" id="formacao">
-        <div class="title"><h1>Formação</h1></div>
-        <div class="timeline">
-            <div class="circle">
-                <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="box">
-                <h1>Ensino Médio</h1>
-                <h2>2020</h2>
-                <p>Ensino médio na escola Prof° Célia Ribeiro Landim, Período integral</p>
-            </div>
-            <div class="circle">
-                <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="box">
-                <h1>Tecnico em Desenvolvimento de Sistemas</h1>
-                <h2>2021</h2>
-                <p>É a área profissional responsável por dar uma solução informatizada a um problema, como a criação de um software, um aplicativo ou um banco de dados.</p>
-            </div>
-            
-        </div>
-        <div class="btn"><button class="cv"><a href="curriculo.pdf"><i class="fas fa-download"></i> Download CV</button></a></div>
-    </div>
-    <div class="projetos secundary" id="projetos">
-        <div class="title"><h1>Projetos</h1></div>
-        <div class="grid">
-            <div class="project">
-                <h1 class="name">Divâ</h1>
-                <p>Projeto de Tcc, com o intuito de viabilizar as consultas psicológicas online utilizando uma plataforma.</p>
-            </div>
-            <div class="project">
-                <h1 class="name">Flipper</h1>
-                <p>Projeto consiste em um clone da plataforma Twitter.</p>
-            </div>
-            <div class="project">
-                <h1 class="name">My links</h1>
-                <p>Site onde você poê todos seus links de redes-sociais.</p>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="project">
-                <h1 class="name">Em breve</h1>
-                <p>Espere um pouco projeto em Desenvolvimento</p>
-            </div>
-            <div class="project">
-                <h1 class="name">Em breve</h1>
-                <p>Espere um pouco projeto em Desenvolvimento</p>
-            </div>
-            <div class="project">
-                <h1 class="name">Em breve</h1>
-                <p>Espere um pouco projeto em Desenvolvimento</p>
-            </div>
-        </div>
-        <div class="link">
-            <a href="https://github.com/LucasOliveiraEvangelista/" target="_blank"><p>Repositórios github</p></a>
-        </div>
-    </div>
-    <div class="conhecimentos primary" id="linguagens">
-        <div class="cadeia">
-            <div class="title"><h1>Linguagens e softwares</h1></div>
-            <div class="caixa">
-                <div class="card">
-                    <div class="conteudo">
-                        <h2>HTML 5</h2>
-                        <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</p>
-                    </div>
-                    <i class="fab fa-html5"></i>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <h2>CSS 3</h2>
-                        <p>O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a aparência em páginas da internet.</p>
-                    </div>
-                    <i class="fab fa-css3"></i>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <h2>PHP</h2>
-                        <p>É uma linguagem de script open source de uso geral, muito utilizada, e adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.</p>
-                    </div>
-                    <i class="fab fa-php"></i>
-                </div>
-            </div>
-            <div class="caixa">
-                <div class="card">
-                    <div class="conteudo">
-                        <h2>JS</h2>
-                        <p> é uma linguagem de programação que permite a você implementar itens complexos em páginas web</p>
-                    </div>
-                    <i class="fab fa-js"></i>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <h2>Figma</h2>
-                        <p>O Figma é uma ferramenta de UI online e gratuita, feita para criar, colaborar, prototipar e inspecionar.</p>
-                    </div>
-                    <i class="fab fa-figma"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="servicos secundary" id="servicos">
-        <div class="title"><h1>Serviços</h1></div>
-        <div class="line">
-            
-            <div class="card">
-                <i class="fas fa-laptop"></i>
-                <h1>Criação de sites</h1>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ex, ipsa, quos tenetur enim incidunt praesentium vero molestias impedit asperiores cumque! Doloribus odio similique, nesciunt a labore inventore aliquid.</h2>
-            </div>
-            <div class="card">
-                <i class="fas fa-code"></i>
-                <h1>Código sêmantico</h1>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ex, ipsa, quos tenetur enim incidunt praesentium vero molestias impedit asperiores cumque! Doloribus odio similique, nesciunt a labore inventore aliquid.</h2>
-            </div>
-            <div class="card">
-                <i class="fas fa-pencil-ruler"></i>
-                <h1>Ui Design</h1>
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur ex, ipsa, quos tenetur enim incidunt praesentium vero molestias impedit asperiores cumque! Doloribus odio similique, nesciunt a labore inventore aliquid.</h2>
-            </div>
-        </div>
-    </div>
-    <footer class="rodape">
-        <div class="links">
-            <a href="https://linkedin.com/in/lucas-evangelista-dev"><button class="btn"><i class="fab fa-linkedin"></i> linkedin</button></a>
-            <a href="https://github.com/LucasOliveiraEvangelista/"><button class="btn"><i class="fab fa-github"></i> github</button></a>
-            <a href="https://www.youtube.com/channel/UCS43U305JwL2T3ze6e3KcfA/"><button class="btn"><i class="fab fa-youtube"></i> youtube</button></a>
-            <a href="curriculo.pdf"><button class="btn"><i class="fas fa-download"></i> curriculo</button></a>
-            <a href="#inicio"><button class="btn"><i class="fas fa-arrow-up"></i></button></a>
-        </div>
-        <div class="txt">
-            <h1>Orgulhosamente feito por Lucas Evangelista.</h1>
-        </div>
-    </footer>
+        </footer>
+    </main>
 </body>
 </html>
+
+            <!-- <a href="https://linkedin.com/in/lucas-evangelista-dev"><button class="btn"><i class="fab fa-linkedin"></i> linkedin</button></a>
+            <a href="https://github.com/LucasOliveiraEvangelista/"><button class="btn"><i class="fab fa-github"></i> github</button></a>
+            <a href="https://www.youtube.com/channel/UCS43U305JwL2T3ze6e3KcfA/"><button class="btn"><i class="fab fa-youtube"></i> youtube</button></a>
+            <a href="curriculo.pdf"><button class="btn"><i class="fas fa-download"></i> curriculo</button></a> -->
