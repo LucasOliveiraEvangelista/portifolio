@@ -322,16 +322,16 @@ section.skills .container .box{
     border-radius: 2px;
 }
 section.skills .container .box .items{
-    padding: 30px;
+    padding: 36px;
     background-color: var(--bg-color2);
     width: 14rem;
-    margin: 10px;
+    margin: 8px;
     height: 14rem;
     transition: 0.5s ease;
     text-align: center;
 }
 section.skills .container .box .items i{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primary-color);
 }
 
@@ -347,11 +347,11 @@ footer .links{
     padding: 40px;
 }
 footer .links a .btn{
-    width: 180px;
+    width: 16rem;
     height: 50px;
     padding: 8px;
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background-color: var(--bg-color2);
     text-transform: capitalize;
     font-family: var(--font3);
@@ -408,5 +408,144 @@ footer .txt{
     text-align: center;
     color: var(--white);
     font-family: var(--font3);
-    font-size: .8rem;
+    font-size: .7rem;
+}
+@media (max-width: 1440px){
+    nav{
+        width: 92%;
+    }
+}
+@media(max-width: 1280px){
+    section.home .container img{
+        margin: -400px 160px 0 0;
+        width: 38rem;
+    }
+}
+
+@media(max-width: 1110px){
+    section.home .container img{
+        width: 34rem;
+    }
+}
+
+@media(max-width: 1040px){
+    section.home .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.home .container .text{
+        width: 75%;
+        text-align: center;
+    }
+    section.home .container h1, section.home .container h2{
+        font-size: 4.4em;
+    }
+    section.home .container h3{ 
+        font-size: 1.8em;
+    }
+
+    section.home .container img{
+        margin: 40px;
+        width: 40rem;
+    }
+}
+
+
+@media(max-width: 998px){
+    section.projects{
+        padding: 60px 60px 0 60px;
+    }
+    section.projects .container .row .box, section.projects .container .row2 .box{
+        padding: 16px;
+        width: 20rem;
+        margin: 10px;
+        height: 15rem;
+    }
+    section.projects .container .row .box img,section.projects .container .row2 .box img{
+        width: 16rem;
+    }
+    section.projects .container .row .box h1,section.projects .container .row2 .box h1{
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+    }
+    section.projects .container .row .box p,section.projects .container .row2 .box p{
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width: 960px){
+    section.services{
+        padding: 60px 30px 0 30px;
+    }
+    section.services .container .box{
+        padding: 16px; 
+    }
+    section.services .container .box .items{
+        padding: 16px;
+        width: 20rem;
+        margin: 10px;
+        height: 14rem;
+    }
+    section.services .container .box .items i{
+        font-size: 5rem;
+    }
+    section.services .container .box .items h1{
+        font-size: 1.8rem;
+    }
+    section.services .container .box .items:hover{
+        padding: 10px;
+        width: 20.4rem;
+        height: 14rem;
+    }
+    
+    section.skills{
+        padding: 60px 30px 0 30px;
+    }
+    section.skills .container .box{
+        padding: 16px;  
+    }
+    section.skills .container .box .items{
+        padding: 32px;
+        width: 12rem;
+        height: 12rem;
+    }
+    section.skills .container .box .items i{
+        font-size: 5rem;
+        color: var(--primary-color);
+    }
+}
+
+/* parei aqui  sobre e footer*/
+
+@media(max-width: 786px){
+    section.home .container h1{
+        margin-bottom: 14px;
+    }
+    section.home .container h1, section.home .container h2{
+        font-size: 4em;
+    }
+    section.home .container h3{ 
+        font-size: 1.6em;
+    }
+
+    section.home .container img{
+        margin: 20px;
+        width: 36rem;
+    }
+}
+@media(max-width: 715px){
+    section.home .container h1, section.home .container h2{
+        font-size: 3.4em;
+    }
+    section.home .container h3{ 
+        font-size: 1.3em;
+    }
+
+    section.home .container img{
+        margin: 10px;
+        width: 28rem;
+    }
 }
